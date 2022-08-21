@@ -36,6 +36,7 @@ int main()
     fflush(stdin);
     gets(youtube_Link);
 
+    //the youtube-dl.exe should be in the same directory as the excutable file
     strcpy(command, "youtube-dl.exe -f ");
     switch (choice)
     {
