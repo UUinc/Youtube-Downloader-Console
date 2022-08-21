@@ -2,14 +2,24 @@
 #include<stdlib.h>
 #include<string.h>
 #include<conio.h>
+#include <windows.h>
+#include <Lmcons.h>
 
 int main()
 {
-    char path_destination[100] = "C:\\Users\\hp\\";
+    char path_destination[100] = "C:\\Users\\";
+    char username[UNLEN+1];
     char youtube_Link[100];
     char extention[5];
     char command[255];
     int choice;
+    
+    //get the current username
+    DWORD username_len = UNLEN+1;
+    GetUserName(username, &username_len);
+
+    strcat(path_destination, username);
+    strcat(path_destination, "\\");
 
     printf("Youtube downloader\n\n");
     puts("Download:");
