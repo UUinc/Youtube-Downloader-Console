@@ -33,13 +33,13 @@ int main()
             strcpy(extention, "mp4");
             strcat(command, "mp4 ");
 
-            strcat(path_destination, "Music\\");
+            strcat(path_destination, "Videos\\");
             break;
         case 2:
             strcpy(extention, "m4a");
             strcat(command, "m4a ");
 
-            strcat(path_destination, "Videos\\");
+            strcat(path_destination, "Music\\");
             break;
     }
     
